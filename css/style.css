@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'calibri';
+    font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -14,34 +14,93 @@ h4,
 h5,
 h6,
 button {
-    font-family: "Anton";
+    font-family: "Roboto";
 }
 
 body {
     overflow-x: hidden;
     max-width: 1920px;
-
-    background-color: #d3d3d3;
     background-repeat: round;
-
 }
 
-h1 {
-    font-size: 5em;
-    font-weight: bolder;
+.Acceuil .image {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 100vh;
+    width: 100vh;
+    height: 100vh;
+    overflow: hidden;
+} 
+
+ .haut_gauche {
+    top: 0;
+    left: 0;
+    right: 50%;
+    position: absolute;
+    float: left;
 }
 
-h2 {
-    font-size: 3em;
-    font-weight: bolder;
+.haut_gauche .logo {
+    margin-top: 1em;
+    padding-right : 3em;
+    float: left;
 }
 
-h3 {
-    font-size: 2em;
-    font-weight: bolder;
+.haut_gauche .head_text {
+    font-size: 1em;
+    float: left;
+    color: white;
+    text-decoration: underline #0c6ffd;
 }
 
-h5 {
-    font-weight: lighter;
-    font-size: 1.4em;
+.image .encar { 
+    margin-left: 1em;
+    margin-right: 1em;
+    top: 48vh;
+    left: 0;
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
 }
+
+.encar .title{
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.encar .title span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4em;    
+}
+
+.encar .text{
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+.bas_droite {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bas_droite .links {
+    color: white;
+    margin-bottom: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0c6ffd;
+}
+
