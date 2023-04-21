@@ -35,16 +35,23 @@ Document
 *,
 *::before,
 *::after {
-  box-sizing: border-box; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
 }
 
 html {
-  font-family: sans-serif; /* 2 */
-  line-height: 1.15; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 4 */
-  -ms-text-size-adjust: 100%; /* 4 */
-  -ms-overflow-style: scrollbar; /* 5 */
-  -webkit-tap-highlight-color: transparent; /* 6 */
+  font-family: sans-serif;
+  /* 2 */
+  line-height: 1.15;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+  -ms-overflow-style: scrollbar;
+  /* 5 */
+  -webkit-tap-highlight-color: transparent;
+  /* 6 */
 }
 
 /* IE10+ doesn't honor `<meta name="viewport">` in some cases. */
@@ -53,7 +60,17 @@ html {
 }
 
 /* Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers) */
-article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
   display: block;
 }
 
@@ -65,14 +82,17 @@ Body
 3. Set an explicit initial text-align value so that we can later use the `inherit` value on things like `<th>` elements.
 */
 body {
-  margin: 0; /* 1 */
+  margin: 0;
+  /* 1 */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
   color: #212529;
-  text-align: left; /* 3 */
-  background-color: #fff; /* 2 */
+  text-align: left;
+  /* 3 */
+  background-color: #fff;
+  /* 2 */
 }
 
 /*
@@ -92,9 +112,12 @@ Content grouping
 2. Show the overflow in Edge and IE.
 */
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /*
@@ -105,7 +128,12 @@ Typography
 Remove top margins from headings
 By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top margin for easier control within type scales as it avoids margin collapsing.
 */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: .5rem;
 }
@@ -129,12 +157,18 @@ Abbreviations
 4. Duplicate behavior to the data-* attribute for our tooltip plugin
 */
 abbr[title],
-abbr[data-original-title] { /* 4 */
-  text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted; /* 2 */
-          text-decoration: underline dotted; /* 2 */
-  cursor: help; /* 3 */
-  border-bottom: 0; /* 1 */
+abbr[data-original-title] {
+  /* 4 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+  cursor: help;
+  /* 3 */
+  border-bottom: 0;
+  /* 1 */
 }
 
 address {
@@ -163,7 +197,8 @@ dt {
 
 dd {
   margin-bottom: .5rem;
-  margin-left: 0; /* Undo browser default */
+  margin-left: 0;
+  /* Undo browser default */
 }
 
 blockquote {
@@ -171,16 +206,19 @@ blockquote {
 }
 
 dfn {
-  font-style: italic; /* Add the correct font style in Android 4.3- */
+  font-style: italic;
+  /* Add the correct font style in Android 4.3- */
 }
 
 b,
 strong {
-  font-weight: bolder; /* Add the correct font weight in Chrome, Edge, and Safari */
+  font-weight: bolder;
+  /* Add the correct font weight in Chrome, Edge, and Safari */
 }
 
 small {
-  font-size: 80%; /* Add the correct font size in all browsers */
+  font-size: 80%;
+  /* Add the correct font size in all browsers */
 }
 
 sub,
@@ -208,8 +246,10 @@ Links
 a {
   color: #007bff;
   text-decoration: none;
-  background-color: transparent; /* Remove the gray background on active links in IE 10. */
-  -webkit-text-decoration-skip: objects; /* Remove gaps in links underline in iOS 8+ and Safari 8+. */
+  background-color: transparent;
+  /* Remove the gray background on active links in IE 10. */
+  -webkit-text-decoration-skip: objects;
+  /* Remove gaps in links underline in iOS 8+ and Safari 8+. */
 }
 
 a:hover {
@@ -228,7 +268,8 @@ a:not([href]):not([tabindex]) {
   text-decoration: none;
 }
 
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
   color: inherit;
   text-decoration: none;
 }
@@ -247,8 +288,10 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* Correct the inheritance and scaling of font size in all browsers. */
-  font-size: 1em; /* Correct the odd `em` font sizing in all browsers. */
+  font-family: monospace, monospace;
+  /* Correct the inheritance and scaling of font size in all browsers. */
+  font-size: 1em;
+  /* Correct the odd `em` font sizing in all browsers. */
 }
 
 pre {
@@ -282,12 +325,15 @@ Images and content
 
 img {
   vertical-align: middle;
-  border-style: none; /* Remove the border on images inside links in IE 10-. */
-  max-width: 100%; /* --- */
+  border-style: none;
+  /* Remove the border on images inside links in IE 10-. */
+  max-width: 100%;
+  /* --- */
 }
 
 svg:not(:root) {
-  overflow: hidden; /* Hide the overflow in IE */
+  overflow: hidden;
+  /* Hide the overflow in IE */
 }
 
 /*
@@ -314,7 +360,7 @@ select,
 summary,
 textarea {
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 /*
@@ -324,7 +370,8 @@ Tables
 */
 
 table {
-  border-collapse: collapse; /* Prevent double borders */
+  border-collapse: collapse;
+  /* Prevent double borders */
 }
 
 caption {
@@ -376,7 +423,8 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0; /* Remove the margin in Firefox and Safari */
+  margin: 0;
+  /* Remove the margin in Firefox and Safari */
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -384,12 +432,14 @@ textarea {
 
 button,
 input {
-  overflow: visible; /* Show the overflow in Edge */
+  overflow: visible;
+  /* Show the overflow in Edge */
 }
 
 button,
 select {
-  text-transform: none; /* Remove the inheritance of text transform in Firefox */
+  text-transform: none;
+  /* Remove the inheritance of text transform in Firefox */
 }
 
 /*
@@ -416,8 +466,10 @@ button::-moz-focus-inner,
 
 input[type="radio"],
 input[type="checkbox"] {
-  box-sizing: border-box; /* 1. Add the correct box sizing in IE 10- */
-  padding: 0; /* 2. Remove the padding in IE 10- */
+  box-sizing: border-box;
+  /* 1. Add the correct box sizing in IE 10- */
+  padding: 0;
+  /* 2. Remove the padding in IE 10- */
 }
 
 input[type="date"],
@@ -434,7 +486,8 @@ input[type="month"] {
 }
 
 textarea {
-  overflow: auto; /* Remove the default vertical scrollbar in IE. */
+  overflow: auto;
+  /* Remove the default vertical scrollbar in IE. */
   /* Textareas should really only resize vertically so they don't break their (horizontal) containers. */
   resize: vertical;
 }
@@ -460,17 +513,21 @@ fieldset {
 legend {
   display: block;
   width: 100%;
-  max-width: 100%; /* 1 */
+  max-width: 100%;
+  /* 1 */
   padding: 0;
   margin-bottom: .5rem;
   font-size: 1.5rem;
   line-height: inherit;
-  color: inherit; /* 2 */
-  white-space: normal; /* 1 */
+  color: inherit;
+  /* 2 */
+  white-space: normal;
+  /* 1 */
 }
 
 progress {
-  vertical-align: baseline; /* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+  vertical-align: baseline;
+  /* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
 }
 
 /*
@@ -519,11 +576,13 @@ output {
 }
 
 summary {
-  display: list-item; /* Add the correct display in all browsers */
+  display: list-item;
+  /* Add the correct display in all browsers */
 }
 
 template {
-  display: none; /* Add the correct display in IE */
+  display: none;
+  /* Add the correct display in IE */
 }
 
 /*
