@@ -33,7 +33,7 @@ body {
     top: 0;
     left: 0;
     bottom: 100vh;
-    width: 50%;
+    width: 50vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -118,7 +118,7 @@ body {
     top: 0;
     left: 0;
     bottom: 100vh;
-    width: 104%;
+    width: 50vw;
     grid-template-columns: 50% auto;
 
 }
@@ -212,7 +212,7 @@ body {
     padding-bottom: 10em;
     border: solid 1px #eaeaea;
     width: 95vh;
-    padding-left: 10%;
+    padding-left: 10%g;
 }
 
 .contact_form textarea {
@@ -227,5 +227,5 @@ body {
 }
 
 .cadre_droite {
-    margin-left: 50%;
+    margin-left: 50vw;
 }
