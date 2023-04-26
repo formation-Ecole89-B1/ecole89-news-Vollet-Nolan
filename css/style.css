@@ -207,16 +207,66 @@ body {
     color: #2e5ece;
 }
 
-.contact_form {
-    padding-top: 10em;
-    padding-bottom: 10em;
-    border: solid 1px #eaeaea;
-    width: 95vh;
-    padding-left: 10%g;
+.cadre_droite .article_1 {
+    width: 100%;
 }
 
-.contact_form textarea {
-    height: 10em;
+.article_1 .grille_title_1 {
+    background-color: #99dc60;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 0.7em;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 2em;
+    text-align: center;
+    max-height: 4vh;
+}
+
+.article_2 .grille_title_2 {
+    background-color: #DC5E50;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 0.7em;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 2em;
+    text-align: center;
+    max-height: 4vh;
+}
+
+.article_3 .grille_title_3 {
+    background-color: #0766F0;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 0.7em;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 2em;
+    text-align: center;
+    max-height: 4vh;
+}
+
+.article_full_auteur {
+    margin-top: 2em;
+    display: flex;
+    color: #8f9096;
+    content: initial;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+.article_full_auteur span {
+    color: black;
+    font-style: bolder;
+    margin-left: 0.5em;
+    font-size: 2em;
 }
 
 .cadre {
@@ -228,4 +278,16 @@ body {
 
 .cadre_droite {
     margin-left: 50vw;
+}
+
+.contact_form {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    border: solid 1px #eaeaea;
+    width: 95vh;
+    padding-left: 10%;
+}
+
+.contact_form textarea {
+    height: 10em;
 }
